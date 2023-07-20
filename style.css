@@ -1,0 +1,145 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 40px;
+    display: flex;
+    gap: 50px;
+    padding-top: 0;
+    margin-top: 0;
+}
+@media only screen and (max-width: 700px) {
+    body {
+        display: block;
+    }
+}
+#toHasil {
+    height: 10px;
+}
+/* form */
+.form {
+    border: none;
+    background-color: rgba(205, 205, 205, .2);
+    padding: 20px;
+}
+.form fieldset {
+    border: none;
+}
+.input {
+    width: 75%;
+    height: 35px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 40px;
+    background-image: url(../assets/draw.png);
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-position: 10px;
+}
+fieldset h4 {
+    margin-bottom: 5px;
+}
+.button {
+    background-color: rgb(60, 195, 222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.button:active {
+    background-color: rgb(53, 107, 146)
+}
+.reset {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.reset a {
+    color: black;
+    text-decoration: none;
+}
+.reset:active {
+    background-color: rgb(132, 132, 132);
+}
+/* form end */
+
+/* hasil */
+.hasil {
+    text-align: center;
+    background-color: rgba(205, 205, 205, .2);
+    padding: 20px;
+}
+.total-hasil {
+    font-size: 40px;
+}
+.downloadBMI {
+    background-color: rgb(60, 195, 222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+.downloadBMI:active {
+    background-color: rgb(53, 107, 146)
+}
+/* hasil end*/
+
+/* /consutasi */
+.konsultasi-button {
+    background-color: rgb(60, 195, 222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    height: 30px;
+    cursor: pointer;
+}
+.konsultasi-button:active {
+    background-color: rgb(53, 107, 146)
+}
+.registrasi-button {
+    background-color: rgb(60, 195, 222);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.registrasi-button:active {
+    background-color: rgb(53, 107, 146)
+}
+.penyakit {
+    text-align: center;
+    background-color: rgba(205, 205, 205, .2);
+    padding: 20px 0;
+}
+.penyakit ul {
+    padding: 0;
+}
+.penyakit li {
+    list-style: none;
+}
+.download-apk {
+    text-align: center;
+}
+.download-apk img {
+    cursor: pointer;
+    margin: 8px;
+}
+/* /consutasi end */

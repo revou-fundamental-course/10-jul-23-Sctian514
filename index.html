@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Kalkulator BMI</h1>
+      <p>
+        Berat badan ideal adalah impian semua orang.Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+        menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI
+      </p>
+      <form class="form">
+        <fieldset>
+          <h5>Jenis Kelamin</h5>
+          <input type="radio" id="pria" name="jenis-kelamin" />
+          <label for="pria"><b>pria</b></label>
+          <input type="radio" id="wanita" name="jenis-kelamin" />
+          <label for="wanita"><b>wanita</b></label>
+          <h5>Berat Badan (KG)</h5>
+          <input id="berat" class="input" type="number"/>
+          <h5>Usia (tahun)</h5>
+          <input id="usia" class="input" type="number"/>
+          <h5>Tinggi Badan (cm)</h5>
+          <input id="tinggi" class="input" type="number" />
+          <div>
+            <button id="btn" class="button" type="button"><a href="#toHasil">Hitung BMI</a></button>
+            <button class="reset" type="submit"><a href=".">Reset</a></button>
+          </div>
+        </fieldset>
+      </form>
+      <h2>Keunggulan fitur</h2>
+      <ol>
+        <li>Menghuting berat badan</li>
+        <li>Menentukan kategori berat badan ideal atau tidak</li>
+        <li>Mempersiapkan program penurunan berat badan</li>
+      </ol>
+      <p>
+        Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada
+        tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+      </p>
+      <p>
+        Kalkulator ini memberikan anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.Indeks  Masa Tubuh atau (BMI) hitung sebagai berat badan 
+        anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = kg/M<sup>2</sup>
+      </p>
+    </div>
+    <section class="section">
+      <div id="toHasil"></div>
+      <h2>Hasil</h2>
+      <div class="hasil">
+        <h4 id="hasilBerat">Hasil Berat</h4>
+        <p id="total" class="total-hasil">00.0</p>
+        <h5>Anda memiliki berat badan <span id="totalHasil">...</span></h5>
+        <button class="downloadBMI" type="button">Download Hasil BMI</button>
+      </div>
+        <h5>Hasil BMI <span id="judulDeskripsi">...</span></h5>
+        <p id="deskripsi">
+          Anda berada dalam kategori <b>...</b>
+        </p>
+
+      <div class="konsultasi">
+        <button class="konsultasi-button" type="button">
+          Konsultasi Ahli Gizi Via Aplikasi
+        </button>
+        <button class="registrasi-button" type="button">
+          Registrasi Online Ahli Gizi
+        </button>
+      </div>
+
+      <p>
+        BMI tidak sepenuhnya mewakili diagnosa menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut
+      </p>
+      <div class="penyakit">
+        <h3 id="judulPenyakit">Informasi tambahan</h3>
+        <ul id="penyakit">
+          <li>...</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="konsultasi">
+          <button class="konsultasi-button" type="button">
+            Konsultasi Dokter Gizi Via Aplikasi
+          </button>
+          <button class="registrasi-button" type="button">
+            Registrasi Online Sekarang
+          </button>
+        </div>
+      </div>
+      <div class="download-apk">
+        <h3>Download Aplikasi</h3>
+        <img src="./assets/Download_on_the_App_Store_Badge_2.svg" alt="" />
+        <img src="./assets/Google_Play_Store_badge_EN.svg" alt="" />
+      </div>
+    </section>
+    <script src="js.js"></script>
+  </body>
+</html>
